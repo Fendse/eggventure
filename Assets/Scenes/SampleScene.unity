@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  stickiness: 0
 --- !u!1 &2072999206
 GameObject:
   m_ObjectHideFlags: 0
