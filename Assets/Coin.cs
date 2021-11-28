@@ -8,8 +8,12 @@ public class Coin : Collectable2D
 
     public override void OnCollected(GameObject collector)
     {
-        ScoreKeeper scoreKeeper = collector.GetComponent<ScoreKeeper>();
-        if (scoreKeeper != null)
+        ScoreKeeper scoreKeeper = collector.GetComponentInChildren<ScoreKeeper>();
+        if (scoreKeeper == null)
+        {
+            Debug.Log("No score keeper???");
+        }
+        else
         {
             scoreKeeper.Score += value;
         }

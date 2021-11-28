@@ -5,7 +5,7 @@ public class ScoreKeeper : MonoBehaviour
 {
     public Text scoreDisplay;
     
-    private int _score;
+    public static int _score = 0;
     public int Score {
         get {
             return _score;
@@ -13,7 +13,11 @@ public class ScoreKeeper : MonoBehaviour
 
         set {
             _score = value;
-            scoreDisplay.text = $"Heat: ${value}";
+            Debug.Log($"Score set to ${value}");
+            if (scoreDisplay != null)
+            {
+                scoreDisplay.text = $"Heat: ${value}";
+            }
         }
     }
 }
