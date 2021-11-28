@@ -25,7 +25,7 @@ public class Fly : MonoBehaviour
         }
         if (Timer > (60))
         {
-            SceneManager.LoadScene("3rd level");
+            SceneManager.LoadScene("good");
         }
 
     }

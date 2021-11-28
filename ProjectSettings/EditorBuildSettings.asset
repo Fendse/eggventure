@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/other scene.unity
     guid: 6ea78909d8b1111449b8abc323e1376d
   - enabled: 1
-    path: Assets/Scenes/3rd level.unity
+    path: Assets/Scenes/Good.unity
     guid: 138d585de87320343a0351eb360cf553
   m_configObjects: {}
