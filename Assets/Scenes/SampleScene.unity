@@ -3090,5 +3090,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueDragon
       objectReference: {fileID: 0}
+    - target: {fileID: 672890394779834610, guid: faca40c831e639f7f8a915e663e78e57, type: 3}
+      propertyPath: m_TagString
+      value: Collector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faca40c831e639f7f8a915e663e78e57, type: 3}

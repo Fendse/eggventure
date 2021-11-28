@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextLevel : MonoBehaviour
+public class NextLevel : Collectable2D
 {
     public string sceneName;
-    
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player")) {
-            SceneManager.LoadScene(sceneName);
-        }
+
+    public override void OnCollected(GameObject _collector) {
+        SceneManager.LoadScene(sceneName);
     }
 }
