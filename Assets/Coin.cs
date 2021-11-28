@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Coin : Collectable2D
 {
-    public override void OnCollected(GameObject _collector)
+    public int value;
+
+    public override void OnCollected(GameObject collector)
     {
+        ScoreKeeper scoreKeeper = collector.GetComponent<ScoreKeeper>();
+        if (scoreKeeper != null)
+        {
+            scoreKeeper.Score += value;
+        }
         GameObject.Destroy(gameObject);
     }
 }
