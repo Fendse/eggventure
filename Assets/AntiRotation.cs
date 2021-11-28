@@ -11,14 +11,8 @@ public class AntiRotation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        Transform transform = gameObject.transform;
-        Transform parent = transform.parent;
-        transform.parent = null;
-        Vector3 oldOrientation = transform.eulerAngles;
-        Vector3 newOrientation = new Vector3(oldOrientation.x, oldOrientation.y, 0.0f);
-        transform.eulerAngles = newOrientation;
-        transform.parent = parent;
+        transform.rotation = Quaternion.identity;
     }
 }
